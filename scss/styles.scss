@@ -1,0 +1,123 @@
+@import "vendors/reset";
+
+body {
+  background-color: #7ADAF3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+}
+
+.generate-password {
+  background-color: #E5F8F4;
+  border: 1px solid #E5F8F4;
+  width: 610px;
+  height: 646px;
+  padding: 33px 62px;
+
+  &__conteins {
+    border-radius: 35px;
+    border: 1px solid #CED5D3;
+    width: 100%;
+    padding: 22px 36px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 36px;
+
+    &__crated {
+      padding: 0 5px;
+    }
+
+    &__image {
+      background-image: url("../image/copy.png");
+      background-color: transparent;
+      width: 27px;
+      height: 27px;
+    }
+
+  }
+
+  &__form {
+    padding: 0 90px;
+    font-size: 30px;
+
+
+    &__characters {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    &__ccheck {
+      position: absolute;
+      top: -1999px;
+
+      &:checked + label:after {
+        display: block;
+      }
+    }
+
+
+    &__clabel {
+      padding: 0 60px;
+
+      &:before {
+        width: 24px;
+        height: 24px;
+        display: block;
+        content: "";
+        border: 1px solid #CED5D3;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        border-radius: 5px;
+        ;
+      }
+
+      &:after {
+        width: 18px;
+        height: 18px;
+        content: "";
+        border: 1px solid #CED5D3;
+        position: absolute;
+        top: 9px;
+        left: 3px;
+        display: none;
+        border-radius: 5px;
+        background-color: #7ADAF3;
+      }
+    }
+
+    &__range {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &__rvariation {
+      width: 230px;
+
+    }
+
+    &__rwnumber {
+      width: 64px;
+      height: 46px;
+      margin-top: 28px;
+      border-radius: 5px;
+      border: 1px solid #CED5D3;
+    }
+
+    &__submit {
+      border: 1px solid #15A085;
+      background-color: #15A085;
+      border-radius: 35px;
+      color: white;
+      padding: 20px 20px;
+      width: 100%;
+    }
+  }
+}
+
+
+
